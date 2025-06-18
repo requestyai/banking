@@ -12,6 +12,13 @@ const (
 	lengthSwift11 = 11
 )
 
+var invalidBankCodes = map[string]bool{
+	"MARK": true,
+	"LANG": true,
+	"PASS": true,
+	"SAUS": true,
+}
+
 func validateLength(value string) error {
 	if l := len(value); l != lengthSwift8 && l != lengthSwift11 {
 		return ErrInvalidLength
@@ -29,7 +36,12 @@ func validateCase(value string) error {
 }
 
 func validateBankCode(value string) error {
-	if bankCode := extractBankCode(value); !validateAlpha(bankCode) {
+	bankCode := extractBankCode(value)
+	if !validateAlpha(bankCode) {
+		return ErrInvalidBankCode
+	}
+
+	if _, found := invalidBankCodes[bankCode]; found {
 		return ErrInvalidBankCode
 	}
 	return nil

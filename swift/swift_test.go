@@ -108,6 +108,10 @@ var (
 			swift: "JMKMSKLDDS-",
 			err:   ErrInvalidBranchCode,
 		},
+		{
+			swift: "MARKDOWN",
+			err:   ErrInvalidBankCode,
+		},
 	}
 )
 

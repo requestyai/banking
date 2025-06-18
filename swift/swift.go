@@ -7,6 +7,7 @@ var (
 	ErrInvalidLength         = errors.New("swift: invalid length")
 	ErrInvalidCase           = errors.New("swift: invalid case")
 	ErrInvalidBankCode       = errors.New("swift: invalid bank code")
+	ErrIllegalBankCode       = errors.New("swift: illegal bank code")
 	ErrInvalidCountryCode    = errors.New("swift: invalid country code")
 	ErrCountryCodeNotPresent = errors.New("swift: country code does not exist")
 	ErrInvalidLocationCode   = errors.New("swift: invalid location code")
