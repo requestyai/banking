@@ -1,14 +1,14 @@
-# banking 
-[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/jbub/banking) 
-[![Build Status](https://github.com/jbub/banking/actions/workflows/go.yml/badge.svg)](https://github.com/jbub/banking/actions/workflows/go.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jbub/banking)](https://goreportcard.com/report/github.com/jbub/banking)
+# banking
 
 Banking library for Go.
+
+Forked from github.com/jbub/banking.
+Do not pull updates from the original repo without verifying the changes being pulled for security reasons.
 
 ## Install
 
 ```bash
-go get github.com/jbub/banking
+go get github.com/requestyai/banking
 ```
 
 ## Docs
@@ -24,7 +24,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/jbub/banking/iban"
+    "github.com/requestyai/banking/iban"
 )
 
 var (
@@ -56,7 +56,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/jbub/banking/swift"
+    "github.com/requestyai/banking/swift"
 )
 
 var (

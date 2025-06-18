@@ -1,4 +1,4 @@
-module github.com/jbub/banking
+module github.com/requestyai/banking
 
 go 1.21
 

@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/jbub/banking/country"
+	"github.com/requestyai/banking/country"
 )
 
 var (

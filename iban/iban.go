@@ -3,8 +3,8 @@ package iban
 import (
 	"errors"
 
-	"github.com/jbub/banking/bban"
-	"github.com/jbub/banking/country"
+	"github.com/requestyai/banking/bban"
+	"github.com/requestyai/banking/country"
 )
 
 // Error codes returned by failures to validate an iban.
