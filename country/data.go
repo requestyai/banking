@@ -723,6 +723,15 @@ var (
 				bban.NewAccountNumber(8, bban.Num),
 			),
 		},
+		"US": {
+			Name:       "United States",
+			Alpha2Code: "US",
+			Alpha3Code: "USA",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(9, bban.Num), // ABA routing number
+				bban.NewAccountNumber(17, bban.AlphaNum),
+			),
+		},
 		"VA": {
 			Name:       "Vatican City",
 			Alpha2Code: "VA",

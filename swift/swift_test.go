@@ -39,6 +39,14 @@ var (
 			branchCode:   "500",
 			typ:          Type11,
 		},
+		{
+			swift:        "CHASUS33XXX",
+			bankCode:     "CHAS",
+			countryCode:  "US",
+			locationCode: "33",
+			branchCode:   "XXX",
+			typ:          Type11,
+		},
 	}
 	invalidCases = []struct {
 		swift string
